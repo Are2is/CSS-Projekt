@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(27, 27, 27);
+    color: rgb(58, 140, 226);
+    padding: 1px;
+    font-family: 'Überschrift1';
+    padding-left: 60px;
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    margin-top: 6%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    flex-direction: column;
+}
+
+.footerSchrift {
+    font-family: 'Überschrift2';
+    color: aliceblue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footerSchrift:hover {
+    color: rgb(0, 153, 255);
+    box-shadow: -6px -6px 300px -21px rgba(255, 255, 255, 1);
+}
+
+.datenschutztext {
+    color: rgb(188, 188, 188);
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Überschrift1';
+    src: url('fonts/RacingEngine-Sharps.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Überschrift2';
+    src: url('fonts/Conthrax-SemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Überschrift2';
+    color: rgb(0, 54, 100);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: rgb(0, 153, 255);
+}
+
+em {
+    color: rgb(255, 249, 80);
+}
+
+strong {
+    color: rgb(255, 249, 80);
+}
+
+button {
+    border-radius: 50px;
+    background-color: rgb(0, 54, 100);
+    font-family: 'Überschrift2';
+    color: rgb(0, 153, 255);
+    padding: 20px;
+    border: 3px solid rgb(0, 187, 255);
+    cursor: pointer;
+}
+
+button:hover {
+    transition: color 0.3s ease;
+    transition: border 0.3s ease;
+    border: 3px solid rgb(98, 255, 73);
+    color: rgb(98, 255, 73);
+}
+
+label {
+    color: rgb(0, 54, 100);
+}
+
+label:hover {
+    color: rgb(0, 153, 255);
+    transition: color 0.3s ease;
+}
+
+.nameinput {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 1%;
+    min-width: 250px;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 60px 53px 82px -48px rgba(0, 0, 0, 1);
+}
+
+.nachrichtinput {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: flex;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    margin-bottom: 1%;
+    max-width: 350px;
+    min-width: 350px;
+    padding-left: 40px;
+    padding-top: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    flex-direction: row;
+    justify-self: center;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+img {
+    width: 250px;
+    height: 350px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    border: 5px solid rgb(27, 27, 27);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: translateX(10px) translateY(5px);
+}
+
+.containerAricletext {
+    background-color: rgb(120, 185, 255);
+    color: rgb(0, 54, 100);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.sliding-text {
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.articleP {
+    font-family: 'Überschrift2';
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: row;
+}
+
+.seltion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    border-radius: 50px;
+    color: rgb(255, 249, 80);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-bottom: 30px;
+    box-shadow: 37px 50px 300px -62px rgba(0, 0, 0, 1);
+}
+
+.meinehobbys {
+    color: rgb(255, 249, 80);
+    font-family: 'Überschrift2';
+}
+
+.containerkontakt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1%;
+    padding-top: 3px;
+    font-size: 25px;
+}
+
+.kontakth2 {
+    background-color: rgb(255, 249, 80);
+    border-radius: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 37px 50px 300px -62px rgba(0, 0, 0, 1);
+}
+
+.formkontakt {
+    background-color: rgb(189, 189, 189);
+    border-radius: 25px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-bottom: 4%;
+    box-shadow: 37px 50px 300px -62px rgba(0, 0, 0, 1);
+}
+
+.Quellcode {
+    text-align: center;
+}
+
+.buttonmain {
+    margin-top: 1%;
+    display: flex;
+    justify-self: center;
+}
