@@ -35,7 +35,7 @@ footer {
 
 .pfooter {
     padding: 0 0 1% 5%;
-    color: #ffff;
+    color: rgb(188, 188, 188);
 }
 
 a {
@@ -175,12 +175,12 @@ img:hover {
 }
 
 .sliding-text {
-    animation: slide 20s linear infinite;
+    animation: slide 80s linear infinite;
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(50%);
+        transform: translateX(20%);
     }
     100% {
         transform: translateX(-100%);
